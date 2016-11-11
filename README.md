@@ -13,7 +13,7 @@ scrapy crawl shop -o items.json -t json
 # Setup with cron job
 crontab -e
 
-*/5 * * * * scrapy crawl shop
+*/5 * * * * cd /Projects/teespring_scrapy/ && sh /Projects/teespring_scrapy/run.sh
 # Save cron
 crontab: installing new crontab
 # Run cron job
